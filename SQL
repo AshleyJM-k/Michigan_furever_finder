@@ -1,1 +1,14 @@
-CREATE TABLE dog_breed
+CREATE TABLE dog_breed(
+breed_name STRING
+);
+
+CREATE TABLE dog_information(
+age INT
+color STRING
+check_in_date DATE
+last_health_check DATE
+);
+
+CREATE TABLE Org
+org_id INT
+org_location STRING
