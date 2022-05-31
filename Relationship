@@ -1,0 +1,35 @@
+Relationship for dog
+
+Color
+color_id (int)
+color    (text)
+
+Breed    
+breed_id (int)
+breed    (text)
+
+DOG_COLOR
+dog_color_id (dog can have many colors)
+dog_id (dog has a single ID)
+color_id (color ID has a single ID)
+
+DOG_BREED
+dog_breed_id (int) (one ID)
+dog_id (dog has one ID)
+breed_id (breed has one ID)
+
+DOG_PERSONALITY 
+dog_personality_id (dog can have many personalities)
+dog_id (dog has one id)
+personality_id (one ID per personality)
+
+DOG
+dog_id (one ID per dog)
+name (one name per dog)
+gender (one gender per dog)
+status (dog can have one status) 
+size (one size per dog)
+health_records (yes or no)
+birthday (one birthday per dog)
+picture (can have multiple pictures)
+
