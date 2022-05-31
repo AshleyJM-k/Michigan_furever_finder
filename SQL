@@ -1,14 +1,31 @@
-CREATE TABLE dog_breed(
-breed_name STRING
+CREATE TABLE COLOR(
+color_id int,
+color text
 );
 
-CREATE TABLE dog_information(
-age INT
-color STRING
-check_in_date DATE
-last_health_check DATE
+CREATE TABLE BREED(
+breed_id int,
+breed tex
 );
 
-CREATE TABLE Org
-org_id INT
-org_location STRING
+CREATE TABLE PERSONALITY(
+personality_id int,
+personality text
+);
+
+CREATE TABLE DOG_COLOR
+
+CREATE TABLE DOG_BREED
+
+CREATE TABLE PERSONALITY
+
+CREATE TABLE DOG
+dog_id int,
+name text,
+age text,
+sex text
+birthday date,
+picture text,
+status text, 
+records text
+);
