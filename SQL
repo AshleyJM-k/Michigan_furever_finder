@@ -1,7 +1,8 @@
 
 CREATE TABLE BREED(
-breed_id int,
-breed tex
+breedID NOT NULL int,
+breedName tex,
+PRIMARY KEY (breedID),
 );
 
 CREATE TABLE PERSONALITY(
