@@ -1,7 +1,3 @@
-CREATE TABLE COLOR(
-color_id int,
-color text
-);
 
 CREATE TABLE BREED(
 breed_id int,
@@ -13,19 +9,30 @@ personality_id int,
 personality text
 );
 
-CREATE TABLE DOG_COLOR
+CREATE TABLE DOG_COLOR (
+colorId text(15)
+);
 
-CREATE TABLE DOG_BREED
+CREATE TABLE DOG_BREED (
+breedID int,
+multi boolean
+);
 
-CREATE TABLE PERSONALITY
-
-CREATE TABLE DOG
-dog_id int,
-name text,
-age text,
-sex text
+CREATE TABLE DOG (
+dogID int,
+name text(15),
+age int(2),
+sex text(6),
 birthday date,
 picture text,
-status text, 
-records text
+status text(15), 
+records text(15),
+);
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
 );
