@@ -1,3 +1,6 @@
+DROP DATABSE adoption_db;
+CREATE DATABASE IF NOT EXISTS adoption_db;
+USE adoption_db;
 
 CREATE TABLE BREED(
 breedID NOT NULL int,
