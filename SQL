@@ -38,3 +38,8 @@ location ID int(10)
 locationName text(15)
 );
 
+CREATE TABLE USER (
+userID int(10),
+firstName text(15),
+lastName text(15),
+);
