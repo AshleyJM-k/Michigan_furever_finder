@@ -4,7 +4,7 @@ USE adoption_db;
 
 CREATE TABLE BREED(
 breedID NOT NULL int,
-breedName tex(15),
+breedName text(15),
 PRIMARY KEY (breedID),
 );
 
@@ -31,5 +31,10 @@ birthday date,
 picture text,
 status text(15), 
 records text(15),
+);
+
+CREATE TABLE LOCATION (
+location ID int(10)
+locationName text(15)
 );
 
