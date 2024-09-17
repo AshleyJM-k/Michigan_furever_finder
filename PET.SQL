@@ -1,15 +1,59 @@
+DROP DATABSE adoption_db;
+CREATE DATABASE IF NOT EXISTS adoption_db;
+USE adoption_db;
 
-drop table if exists PET;
+DROP TABLE if exists PET;
 
-create table PET (
+CREATE TABLE DOG (
 	ID INTEGER NOT NULL,
-	ANIMAL VARCHAR(20),
-	QUANTITY INTEGER,
+	BREED VARCHAR(20),
 	COST DECIMAL(6,2),
 	RESCUEDATE DATE,
-	PRIMARY KEY (ID)
+	SEX VARCHAR(6)
+	PRIMARY KEY (ID),
 	);
 
+CREATE TABLE BREED(
+breedID INTEGER NOT NULL,
+breedName text(15),
+PRIMARY KEY (breedID),
+);
+
+CREATE TABLE PERSONALITY(
+personality_id int,
+personality text(15),
+);
+
+CREATE TABLE DOG_COLOR (
+colorId text(15)
+);
+
+CREATE TABLE DOG_BREED (
+breedID int(10),
+multi boolean
+);
+
+CREATE TABLE DOG (
+dogID int(15),
+name text(15),
+age int(2),
+sex text(6),
+birthday date,
+picture text,
+status text(15), 
+records text(15),
+);
+
+CREATE TABLE LOCATION (
+location ID int(10)
+locationName text(15)
+);
+
+CREATE TABLE USER (
+userID int(10),
+firstName text(15),
+lastName text(15),
+);
 insert into PET values 
 	(1,'Cat',9,450.09,'2020-05-29'),
 	(2,'Dog',3,666.66,'2020-06-01'),
